@@ -7,7 +7,10 @@
 
 	<ListView items="{{ deviceList }}" itemTap="selectDevice">
 		<ListView.itemTemplate>
-			<Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center" />
+			<GridLayout rows="auto, *" columns="2*, *">
+				<Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center" row="0" col="0"/>
+				<Button text="Connect" tap="add" row="0" col="1" />
+			</GridLayout>
 		</ListView.itemTemplate>
 	</ListView>
 </Page>

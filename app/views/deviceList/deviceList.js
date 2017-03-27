@@ -13,7 +13,7 @@ function scan() {
 	console.log("Scanning...");
 	devices.length = 0;
 	bt.startScanning({
-		serviceUUIDs: ["1800"],
+		serviceUUIDs: [],
 		seconds: 60,
 		onDiscovered: function (peripheral) {
 			devices.push(peripheral)
