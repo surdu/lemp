@@ -1,15 +1,15 @@
 <Page loaded="loaded">
-	<ActionBar title="Available devices" class="action-bar">
+	<ActionBar title="Find devices" class="action-bar">
 		<ActionBar.actionItems>
-			<ActionItem text="Scan" tap="scan" ios.position="right" />
+			<ActionItem text="{{scanTextBtn}}" tap="scan" ios.position="right" />
 		</ActionBar.actionItems>
 	</ActionBar>
 
-	<ListView items="{{ deviceList }}" itemTap="selectDevice">
+	<ListView items="{{ devices }}" itemTap="selectDevice">
 		<ListView.itemTemplate>
 			<GridLayout rows="auto, *" columns="2*, *">
 				<Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center" row="0" col="0"/>
-				<Button text="Connect" tap="add" row="0" col="1" />
+				<Button text="Connect" tap="connect" row="0" col="1" />
 			</GridLayout>
 		</ListView.itemTemplate>
 	</ListView>

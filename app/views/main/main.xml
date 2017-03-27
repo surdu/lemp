@@ -1,0 +1,8 @@
+<Page loaded="loaded">
+	<ActionBar title="Lemp" class="action-bar">
+	</ActionBar>
+	<StackLayout orientation="vertical">
+		<Button text="On" tap="turnOn" />
+		<Button text="Off" tap="turnOff" />
+	</StackLayout>
+</Page>

@@ -1,2 +1,2 @@
 var applicationModule = require("application");
-applicationModule.start({ moduleName: "views/deviceList/deviceList" });
+applicationModule.start({ moduleName: "views/scanner/scanner" });
