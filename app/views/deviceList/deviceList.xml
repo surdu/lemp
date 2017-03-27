@@ -1,0 +1,13 @@
+<Page loaded="loaded">
+	<ActionBar title="Available devices" class="action-bar">
+		<ActionBar.actionItems>
+			<ActionItem text="Scan" tap="scan" ios.position="right" />
+		</ActionBar.actionItems>
+	</ActionBar>
+
+	<ListView items="{{ deviceList }}" itemTap="selectDevice">
+		<ListView.itemTemplate>
+			<Label text="{{ name }}" horizontalAlignment="left" verticalAlignment="center" />
+		</ListView.itemTemplate>
+	</ListView>
+</Page>
